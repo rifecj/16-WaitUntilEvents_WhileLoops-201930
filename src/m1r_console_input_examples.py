@@ -10,7 +10,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 """  # done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
-# TODO: 2.  Read and run this program.  Then do the following problems,
+# done: 2.  Read and run this program.  Then do the following problems,
 #   putting your answers RIGHT HERE IN THIS DOCUMENT.
 #
 #   1. Write a line of code that would input an INTEGER from the
@@ -51,7 +51,7 @@ def main():
     input_a_string()
     input_an_integer()
     input_a_float()
-
+    triangle(4)
 
 ###############################################################################
 # Example: how to INPUT a STRING from the Console.
@@ -112,7 +112,11 @@ def input_a_float():
     print(f_string1.format(potatoes_today))
     print(f_string2.format(potatoes_1900))
 
-
+def triangle(n):
+    for j in range(n):
+        for k in range(j):
+            print(j,k)
+        print()
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
